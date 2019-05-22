@@ -1,8 +1,8 @@
 'use strict';
 
-const Hapi = require('hapi');
-const Code = require('code');
-const Lab = require('lab');
+const Hapi = require('@hapi/hapi');
+const Code = require('@hapi/code');
+const Lab = require('@hapi/lab');
 
 const lab = exports.lab = Lab.script();
 
@@ -906,4 +906,3 @@ describe('Versioning with passive mode', () => {
         expect(response.result.data).to.equal('unversioned');
     });
 });
-
